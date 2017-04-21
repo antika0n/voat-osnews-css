@@ -124,8 +124,10 @@ body {
     margin-bottom: 0;
     margin-top: 6px;
     padding-bottom: 6px;
-    padding-top: 6px
+    padding-top: 6px;
     border: 1px solid #555
+    border-radius: 5px;
+    background:rgba(255,255,255,0.05);
 }
 .link:last-child {
     border: 1px solid #555
@@ -370,7 +372,7 @@ a:visited {
     color: #aaf;
 }
 .even {
-    background: none;
+    background:rgba(255,255,255,0.05);
 }
 .well {
     background: #d9c8a5;
