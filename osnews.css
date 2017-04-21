@@ -1,0 +1,490 @@
+/*  ****************************************************************************
+ * OS News subverse theme! v2.1 2017-04-21
+ *    By Antikaon
+ *
+ * HEAVILY modified version of Planate version 3
+ * Now with Dashboard Menu
+ *
+ * Planate version 3 (2014-07-18)
+ * Theme for WhoaVerse < http://whoaverse.com >
+ * By Nurdoidz
+ * https://github.com/Nurdoidz/Planate-WhoaVerse
+ * **************************************************************************** */
+
+@import url(https://voat.co/content/Dark);
+/* Sorry, dark mode only.  Take it or leave it. */
+
+body {
+    background: #337 url(http://i.imgur.com/nTGy7Y7.jpg);
+    color: #333;
+    font: 10px Arial, sans-serif
+}
+.btn-whoaverse-paging {
+    background: #f7d87d;
+    background: -webkit-linear-gradient(top, #FDFDFD, #F7F7F7);
+    background: -moz-linear-gradient(top, #FDFDFD, #F7F7F7);
+    background: -ms-linear-gradient(top, #FDFDFD, #F7F7F7);
+    background: -o-linear-gradient(top, #FDFDFD, #F7F7F7);
+    border: 1px solid #DFDFDF;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 hsla(0, 0%, 0%, 0.1);
+    color: #4C4C4C;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 2px 6px;
+    text-align: center;
+    background-color: #F8F8F8
+}
+.btn-whoaverse-paging:hover {
+    background: #F8F8F8;
+    background: -webkit-linear-gradient(top, #F8F8F8, #F2F2F2);
+    background: -moz-linear-gradient(top, #F8F8F8, #F2F2F2);
+    background: -ms-linear-gradient(top, #F8F8F8, #F2F2F2);
+    background: -o-linear-gradient(top, #F8F8F8, #F2F2F2);
+    border-color: #CCC;
+    box-shadow: 0 1px 0 hsla(0, 0%, 0%, 0.15);
+    color: #444
+}
+#header {
+    background: url(http://i.imgur.com/XZsetuT.png);
+    height: 185px;
+    background-repeat: no-repeat;
+}
+#header-bottom-left {
+    box-shadow: 0 2px 0 hsla(0, 0%, 0%, 0.05);
+    background: #FFF
+}
+.tabmenu li a {
+    margin-left: 9px;
+    margin-right: 9px;
+    padding-left: 4px;
+    padding-right: 4px;
+    transition: color .25s ease;
+    color: #ffa padding: 5px;
+    font: 14px monospace;
+}
+.tabmenu li.disabled a {
+    border: 0;
+    border-top: 2px solid transparent;
+    border-radius: 0;
+    box-shadow: none;
+    color: #ffa;
+    font: 14px monospace;
+    background: none
+}
+.tabmenu li.disabled a:hover {
+    background: none;
+    color: white;
+    border: 0;
+    box-shadow: none
+}
+.tabmenu li.selected a {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    color: #555;
+    background: none;
+    background: rgb(252, 234, 187);
+    background: -moz-linear-gradient(top, rgba(252, 234, 187, 1) 0%, rgba(252, 205, 77, 1) 50%, rgba(248, 181, 0, 1) 51%, rgba(251, 223, 147, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(252, 234, 187, 1) 0%, rgba(252, 205, 77, 1) 50%, rgba(248, 181, 0, 1) 51%, rgba(251, 223, 147, 1) 100%);
+    background: linear-gradient(to bottom, rgba(252, 234, 187, 1) 0%, rgba(252, 205, 77, 1) 50%, rgba(248, 181, 0, 1) 51%, rgba(251, 223, 147, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#fceabb", endColorstr="#fbdf93", GradientType=0);
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: none;
+    color: #000;
+    background-color: goldenrod
+}
+.tabmenu li.selected a:hover {
+    box-shadow: none;
+    color: #111
+}
+.side {
+    border: 1px solid #E3E3E3;
+    border-radius: 2px;
+    box-shadow: 0 2px 0 hsla(0, 0%, 0%, 0.05);
+    background: #FFF;
+    border: 1px solid #777;
+    border-radius: 21px;
+    background-color: rgba(245, 222, 179, 0.88)
+}
+.sitetable.linklisting {
+    border: 1px solid #777;
+    border-radius: 2px;
+    box-shadow: 0 2px 0 hsla(0, 0%, 0%, 0.05);
+    padding: 0 13px;
+    background: #FFF;
+    border: 1px solid #777;
+    border-width: 1px;
+    border-radius: 21px;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+.link {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 12px;
+    padding-top: 12px
+}
+.link .rank {
+    color: #CCC;
+    font-size: 1em;
+    margin-top: 20px
+}
+.link .title {
+    margin-bottom: 3px;
+    color: lightgreen;
+    font: 1.2em/1.4 monospace
+}
+.link .title a.may-blank {
+    color: light-green
+}
+.link .title a.may-blank:hover {
+    color: white;
+    text-decoration: underline
+}
+.link .title a.may-blank:visited {
+    color: light-blue
+}
+.link .usertext .md {
+    border-radius: 2px;
+    box-shadow: none;
+    background: rgba(0, 0, 0, 0.5);
+    border-width: 1px;
+    border-radius: 15px;
+    color: #ccc
+}
+.content>form {
+    border: 1px solid #E3E3E3;
+    box-shadow: 0 2px 0 hsla(0, 0%, 0%, 0.05);
+    margin-top: 10px;
+    padding: 13px;
+    background: #FFF
+}
+.menuarea {
+    border-bottom: 0;
+    margin: 0;
+    padding: 13px
+}
+.commentarea {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #999;
+    border-radius: 20px;
+    box-shadow: 0 2px 0 hsla(0, 0%, 0%, 0.05);
+    padding: 15px;
+    margin-top: 10px
+}
+.well {
+    border: 1px solid #E3E3E3;
+    border-radius: 2px;
+    box-shadow: 0 2px 0 hsla(0, 0%, 0%, 0.05);
+    background: #FFF
+}
+.well label.control-label {
+    color: black;
+}
+.footer:before {
+    color: #777;
+    content: "/v/osnews theme by Antikaon. Based on the theme at /v/planate";
+    display: block;
+    font-size: 1.5em;
+    margin: 10px
+}
+#header-container {
+    background: rgba(32, 48, 64, 0.75);
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    height: 58px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#sr-header-area {
+    background: rgba(32, 48, 64, 0.75);
+    color: #fc0;
+}
+#sr-bar li a {
+    color: #fc0;
+}
+.pagename {
+    padding: 0;
+    font: 24px monospace;
+}
+.pagename a {
+    padding: 0;
+    color: black
+}
+#container {
+    background: none;
+    border: none
+}
+#header-account {
+    padding-right: 20px
+}
+.logged-in {
+    background: #424242;
+    border: 1px solid #111;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.link a.title.may-blank {
+    color: #afa
+}
+.link a.title.may-blank:visited {
+    color: #a7deff
+}
+.domain a {
+    color: #ffa
+}
+.tagline {
+    color: white
+}
+.link a.subverse:visited {
+    color: #a7deff
+}
+.link a.subverse {
+    color: #afa
+}
+.link .flat-list li a {
+    color: #ffa
+}
+.content>form {
+    border: 1px solid #777;
+    border-radius: 20px;
+    box-shadow: 0 2px 0 hsla(0, 0%, 0%, 0.05);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 13px;
+    background: rgba(0, 0, 0, 0.5)
+}
+.markdownEditorImgButton {
+    border-radius: 3px;
+    background-color: #f7d87d
+}
+.commenttextarea {
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #777;
+    color: #eee;
+    padding: 15px
+}
+.commentarea .menuarea {
+    color: white
+}
+.comment {
+    margin: 10px 0 0;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    border: 1px solid #333;
+    padding: 5px;
+    color: wheat
+}
+.comment .comment {
+    border-radius: 11px;
+    border: 1px solid #333
+}
+.comment .comment,
+.comment .comment .comment .comment,
+.comment .comment .comment .comment .comment .comment,
+.comment .comment .comment .comment .comment .comment .comment .comment,
+.comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background: rgba(32, 32, 32, 0.75)
+}
+.comment .comment .comment,
+.comment .comment .comment .comment .comment,
+.comment .comment .comment .comment .comment .comment .comment,
+.comment .comment .comment .comment .comment .comment .comment .comment .comment,
+.comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background: rgba(64, 64, 64, 0.75)
+}
+.form-control {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #777;
+    border-radius: 11px;
+    color: #f2f2f2
+}
+.comment .flat-list.buttons li a {
+    color: #ffa
+}
+.alert-h2 {
+    color: black;
+    text-align: center;
+    border-bottom: 3px solid black
+}
+.alert-h1 {
+    text-align: center;
+    border-bottom: 3px solid black;
+    padding: 2px;
+    margin-bottom: 2px;
+    border-color: black;
+    color: black;
+    font: bold 12px Arial, sans-serif
+}
+a,
+a:visited {
+    color: #2a4bff;
+    text-decoration: none
+}
+.sidecontentbox .content {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #777;
+    margin: 0;
+    padding: 5px;
+    border-radius: 10px
+}
+.sidecontentbox a {
+    color: white
+}
+.btn-whoaverse.contribute {
+    border-radius: 10px
+}
+.tabmenu li.disabled a.contribute {
+    border-radius: 7px;
+    padding: 10px;
+    border: 1px solid black;
+}
+.footer-container {
+    background: rgba(0, 0, 0, 0.75);
+    border-top: 1px solid #777;
+}
+/* recent fix-ups */
+
+.sorting-thingy {
+    border: 1px solid #777;
+    padding: 5px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+}
+.sorting-thingy a,
+.sorting-thingy a:visited {
+    font-size: 14px;
+    color: #aaf;
+}
+.even {
+    background: none;
+}
+.well {
+    background: #d9c8a5;
+}
+.alert-notice {
+    border-top: 1px solid;
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #d9c8a5;
+    border-color: black;
+    color: #5a5a5a;
+    font-size: 12px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+.promoted {
+    color: white;
+    background: #706756;
+}
+#dashboard-menu {} #dashboard-menu .top-bar {
+    background: rgba(32, 48, 64, 0.75);
+    border-bottom: 1px solid black;
+}
+#dashboard-menu .top-bar nav {
+    color: #fc0;
+}
+#dashboard-menu .top-bar nav ul li a {
+    color: #fc0;
+}
+/* "Subscriptions" in top left corner */
+
+#dashboard-menu .top-bar nav a {
+    color: #fc0;
+    text-transform: uppercase;
+}
+#dashboard {
+    margin-top: 5px;
+    margin-left: 8px;
+    border-radius: 10px;
+    background: rgba(217, 202, 168, 0.95);
+    border-color: #777;
+    box-shadow: 2px 2px #222;
+}
+#dashboard h1 {
+    color: #fff;
+    border: 1px solid black;
+    border-bottom: 3px solid beige;
+    font-family: monospace;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 10px 7px 20px 0;
+    padding-left: 10px;
+    font-size: 14px;
+}
+#dashboard ul li {
+    background: transparent;
+}
+/* I liked the non fixed width subverse titles */
+
+#dashboard ul>li {
+    min-width: 0;
+}
+#dashboard nav ul li a,
+#dashboard nav ul li a:visited {
+    color: #ffa;
+    border: 1px solid #000;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 3px;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #b44747;
+    background: -webkit-linear-gradient(top, #b44747, #ab3c3c);
+    background: -moz-linear-gradient(top, #b44747, #ab3c3c);
+    background: -ms-linear-gradient(top, #b44747, #ab3c3c);
+    background: -o-linear-gradient(top, #b44747, #ab3c3c);
+    border-color: #933333;
+    color: #fff7f7;
+    box-shadow: 1px 1px #ccc;
+}
+#dashboard nav ul li a:hover {
+    background: #222;
+    color: #eee;
+}
+.side .spacer.spacersection {
+    border-radius: 13px;
+    color: white;
+}
+.spacersection .alert-h1 {
+    color: #eee;
+}
+.pagination-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 3px;
+    border: 1px solid #777;
+    border-radius: 13px;
+    padding-left: 15px;
+    margin-top: 5px;
+}
+.pagination-container li {
+    border: 1px solid #777;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 3px;
+    line-height: 26px;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #034;
+    box-shadow: 1px 2px black;
+}
+.pagination-container li:hover {
+    background: #000;
+}
+.btn-whoaverse-paging a {
+    color: #ffa !important;
+    /* Dark theme has this has !important, so gotta have !important here too. */
+    
+    font-size: 1em;
+}
