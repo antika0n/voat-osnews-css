@@ -185,7 +185,7 @@ body {
 }
 .footer:before {
     color: #777;
-    content: "/v/osnews theme by Antikaon. Based on the theme at /v/planate";
+    content: "/v/osnews theme by Antikaon. Get it at https://github.com/antika0n/voat-osnews-css";
     display: block;
     font-size: 1.5em;
     margin: 10px
